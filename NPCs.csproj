@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>NPCs</AssemblyName>
+    <Description>NPCs is a server-side V Rising mod featuring automated scheduled NPC spawning, manual spawning and despawning, custom NPC teams, and multiple spawn points.</Description>
+    <Version>1.0.0</Version>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>NPCs</RootNamespace>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
+    <PackageReference Include="VRising.VampireCommandFramework" Version="0.11.*" />
+    <PackageReference Include="System.Text.Json" Version="6.0.11" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="Il2Cppmscorlib" HintPath="..\interop\Il2Cppmscorlib.dll" />
+    <Reference Include="Il2CppSystem" HintPath="..\interop\Il2CppSystem.dll" />
+    <Reference Include="Il2CppSystem.Core" HintPath="..\interop\Il2CppSystem.Core.dll" />
+    <Reference Include="ProjectM" HintPath="..\interop\ProjectM.dll" />
+    <Reference Include="ProjectM.Shared" HintPath="..\interop\ProjectM.Shared.dll" />
+    <Reference Include="ProjectM.Gameplay.Systems" HintPath="..\interop\ProjectM.Gameplay.Systems.dll" />
+    <Reference Include="ProjectM.GeneratedNetCode" HintPath="..\interop\ProjectM.GeneratedNetCode.dll" />
+    <Reference Include="ProjectM.CodeGeneration" HintPath="..\interop\ProjectM.CodeGeneration.dll" />
+    <Reference Include="Stunlock.Core" HintPath="..\interop\Stunlock.Core.dll" />
+    <Reference Include="Stunlock.Network" HintPath="..\interop\Stunlock.Network.dll" />
+    <Reference Include="Unity.Collections" HintPath="..\interop\Unity.Collections.dll" />
+    <Reference Include="Unity.Entities" HintPath="..\interop\Unity.Entities.dll" />
+    <Reference Include="Unity.Mathematics" HintPath="..\interop\Unity.Mathematics.dll" />
+    <Reference Include="Unity.Transforms" HintPath="..\interop\Unity.Transforms.dll" />
+    <Reference Include="UnityEngine" HintPath="..\interop\UnityEngine.dll" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="..\interop\UnityEngine.CoreModule.dll" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Reference Include="0Harmony" HintPath="..\core\0Harmony.dll" />
+    <Reference Include="BepInEx.Core" HintPath="..\core\BepInEx.Core.dll" />
+    <Reference Include="BepInEx.Unity.Common" HintPath="..\core\BepInEx.Unity.Common.dll" />
+    <Reference Include="BepInEx.Unity.IL2CPP" HintPath="..\core\BepInEx.Unity.IL2CPP.dll" />
+    <Reference Include="Il2CppInterop.Common" HintPath="..\core\Il2CppInterop.Common.dll" />
+    <Reference Include="Il2CppInterop.HarmonySupport" HintPath="..\core\Il2CppInterop.HarmonySupport.dll" />
+    <Reference Include="Il2CppInterop.Runtime" HintPath="..\core\Il2CppInterop.Runtime.dll" />
+  </ItemGroup>
+  
+  <PropertyGroup>
+    <NoWarn>NU1605</NoWarn>
+  </PropertyGroup>
+  
+</Project>
